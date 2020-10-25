@@ -1,0 +1,9 @@
+.vscode/
+
+src/bin/
+src/obj/
+src/Logs/
+src/Migrations/
+
+test/bin/
+test/obj/

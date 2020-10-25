@@ -1,0 +1,382 @@
+info:
+  title: ePizza Service API
+  description: ePizza Service API - Test & Documentation Page, <a href='/swagger.yaml'>download swagger.yaml</a> - SUPPORTED VERSION
+  version: 1
+  termsOfService: &o0
+    absolutePath: /
+    absoluteUri: *o0
+    localPath: /
+    authority: ompix.com
+    hostNameType: Dns
+    isDefaultPort: true
+    pathAndQuery: /
+    segments:
+    - /
+    host: ompix.com
+    port: 80
+    query: ''
+    fragment: ''
+    scheme: http
+    originalString: *o0
+    dnsSafeHost: ompix.com
+    idnHost: ompix.com
+    isAbsoluteUri: true
+    userInfo: ''
+  contact:
+    name: Customer services
+    url: &o1
+      absolutePath: /
+      absoluteUri: *o1
+      localPath: /
+      authority: www.ompix.com
+      hostNameType: Dns
+      isDefaultPort: true
+      pathAndQuery: /
+      segments:
+      - /
+      host: www.ompix.com
+      port: 80
+      query: ''
+      fragment: ''
+      scheme: http
+      originalString: *o1
+      dnsSafeHost: www.ompix.com
+      idnHost: www.ompix.com
+      isAbsoluteUri: true
+      userInfo: ''
+    email: help@ompix.net
+  license:
+    name: Ompix. ® Derechos Reservados
+    url: *o0
+servers: []
+paths:
+  /api/v1/specials-pizzas:
+    operations:
+      Get:
+        tags:
+        - name: PizzaSpecial
+        parameters: []
+        responses:
+          400:
+            description: Bad Request
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Server Error
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          200:
+            description: Success
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  type: array
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  items:
+                    allOf: []
+                    oneOf: []
+                    anyOf: []
+                    required: []
+                    properties: {}
+                    additionalPropertiesAllowed: true
+                    enum: []
+                    reference:
+                      type: Schema
+                      id: PizzaSpecial
+                      isLocal: true
+                      referenceV3: '#/components/schemas/PizzaSpecial'
+                      referenceV2: '#/definitions/PizzaSpecial'
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+    servers: []
+    parameters: []
+  /api/v1/toppings:
+    operations:
+      Get:
+        tags:
+        - name: Topping
+        parameters: []
+        responses:
+          400:
+            description: Bad Request
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          500:
+            description: Server Error
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                  reference:
+                    type: Schema
+                    id: BaseResponse
+                    isLocal: true
+                    referenceV3: '#/components/schemas/BaseResponse'
+                    referenceV2: '#/definitions/BaseResponse'
+                examples: {}
+                encoding: {}
+            links: {}
+          200:
+            description: Success
+            headers: {}
+            content:
+              application/json:
+                schema:
+                  type: array
+                  allOf: []
+                  oneOf: []
+                  anyOf: []
+                  required: []
+                  items:
+                    allOf: []
+                    oneOf: []
+                    anyOf: []
+                    required: []
+                    properties: {}
+                    additionalPropertiesAllowed: true
+                    enum: []
+                    reference:
+                      type: Schema
+                      id: Topping
+                      isLocal: true
+                      referenceV3: '#/components/schemas/Topping'
+                      referenceV2: '#/definitions/Topping'
+                  properties: {}
+                  additionalPropertiesAllowed: true
+                  enum: []
+                examples: {}
+                encoding: {}
+            links: {}
+        callbacks: {}
+        security: []
+        servers: []
+    servers: []
+    parameters: []
+components:
+  schemas:
+    BaseResponse:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required: []
+      properties:
+        is_successful:
+          type: boolean
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+        http_status_code:
+          type: integer
+          format: int32
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+        message:
+          type: object
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          enum: []
+          nullable: true
+        message_detail:
+          type: string
+          readOnly: true
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+      enum: []
+    PizzaSpecial:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required: []
+      properties:
+        id:
+          type: integer
+          format: int32
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+        name:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        description:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        image_url:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        base_price:
+          type: number
+          format: double
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+      enum: []
+    Topping:
+      type: object
+      allOf: []
+      oneOf: []
+      anyOf: []
+      required: []
+      properties:
+        id:
+          type: integer
+          format: int32
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+        name:
+          type: string
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+          nullable: true
+        price:
+          type: number
+          format: double
+          allOf: []
+          oneOf: []
+          anyOf: []
+          required: []
+          properties: {}
+          additionalPropertiesAllowed: true
+          enum: []
+      enum: []
+  responses: {}
+  parameters: {}
+  examples: {}
+  requestBodies: {}
+  headers: {}
+  securitySchemes: {}
+  links: {}
+  callbacks: {}
+securityRequirements: []
+tags: []
+
