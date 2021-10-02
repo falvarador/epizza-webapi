@@ -7,3 +7,9 @@ src/Migrations/
 
 test/bin/
 test/obj/
+
+# Jetbrains files
+.idea*
+
+# Visual Studio Files
+.vs*
